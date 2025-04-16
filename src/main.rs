@@ -25,7 +25,12 @@ struct BuildConfig {
 }
 
 #[derive(Parser)]
-#[command(version, about = "Welcome to Tr2Make", long_about = None)]
+#[command(version, about = r#"
+ _____      ____   __  __         _         
+|_   _|_ __|___ \ |  \/  |  __ _ | | __ ___ 
+  | | | '__| __) || |\/| | / _` || |/ // _ \
+  | | | |   / __/ | |  | || (_| ||   <|  __/
+  |_| |_|  |_____||_|  |_| \__,_||_|\_\\___|"#, long_about = None)]
 struct Args {
     #[arg(index = 1, short, long, default_value = "debug")]
     model: BuildModel,
