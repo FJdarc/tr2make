@@ -1,0 +1,12 @@
+language: c++
+standard: 17
+files:
+  - "app.cpp"
+  - "app.h"
+target: "app"
+architecture: x64
+model:
+  debug:
+    targetdir: "build\\debug"
+  release:
+    targetdir: "build\\release"
